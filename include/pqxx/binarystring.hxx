@@ -20,7 +20,9 @@
 #include <string_view>
 
 #include "pqxx/result.hxx"
-#include "pqxx/strconv.hxx"
+#  include "pqxx/strconv.hxx"
+
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 namespace pqxx
 {
